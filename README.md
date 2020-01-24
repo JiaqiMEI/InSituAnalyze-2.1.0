@@ -1,12 +1,10 @@
 # InSituAnalyze-Python
 A Python Framework for Multi-Components Synchronous Analysis of Spectral Imaging
 
-VERSION = '2.0.0',
-url='https://github.com/JiaqiMEI/InSituAnalyze-Python',
-license='MIT',
+VERSION = '2.1.0', 
 
 # Classifiers
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.8',
         'License :: OSI Approved :: MIT License',
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
@@ -22,13 +20,17 @@ license='MIT',
         'scipy>=1.1.0',
         'scikit-image',
         'Opencv-python',
-        'Pillow',
+        #'Pillow',
         #'math',
         #'pylab',
         'scikit-learn',
-        'wxPython>=4.0.0'
+        'wxPython>=4.0.7.post2'
         
 
 # Launch guide 
         Settle *.py files (in the branch of ‘PythonCode’) as they were and run 'WelcomePage.py' in Python IDEs.
         Files in the branch of 'TestFiles' may be used for the very first-run.
+
+# Update
+  20200124        
+    Automatic segmentation of tissues for the cross-section of crop stem
