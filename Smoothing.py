@@ -28,7 +28,7 @@ class MyFrame(wx.Frame):
         self.__set_properties()
         self.__do_layout()
 
-        self.Bind(wx.EVT_BUTTON, self.ComfirmEve, self.ConfirmBtn)
+        self.Bind(wx.EVT_BUTTON, self.ConfirmEve, self.ConfirmBtn)
         # end wxGlade
 
     def __set_properties(self):

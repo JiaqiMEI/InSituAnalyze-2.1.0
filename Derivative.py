@@ -74,8 +74,8 @@ class MyFrame(wx.Frame):
         # end wxGlade
 
     def ConfirmEve(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'ComfirmEve' not implemented!")
-        event.Skip()
+        #print("Event handler 'ConfirmEve' not implemented!")
+        #event.Skip()
 
         G.DWidth = float(self.textwidth.GetValue())
         G.DOrder = float(self.textorder.GetValue())

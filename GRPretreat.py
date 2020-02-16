@@ -7,6 +7,7 @@
 import wx
 from scipy.io import loadmat
 import numpy as np
+import hdf5storage
 
 import G
 import Baseline2
@@ -133,12 +134,14 @@ class MyFrame(wx.Frame):
             file = dlg.GetPath()
             dlg.Destroy()
 
-        ref = loadmat(file)
+        #ref = loadmat(file)
+        ref = hdf5storage.loadmat(file)
+        #ref = refO[list(refO.keys())[0]]
 
         del file
 
         # 参考光谱处理
-        G.ref = ref[list(ref.keys())[3]]    # 自动读取
+        G.ref = ref[list(ref.keys())[0]]    # 自动读取
         del ref
         print(G.ref.shape)
 
